@@ -1,6 +1,6 @@
 studentId: speaker01
 project: speaker01-green
-clusterAppsDomain: apps.cluster-w97m7.w97m7.sandbox753.opentlc.com/
+clusterAppsDomain: apps.cluster-w97m7.w97m7.sandbox753.opentlc.com
 
 image:
   masterfile: 
