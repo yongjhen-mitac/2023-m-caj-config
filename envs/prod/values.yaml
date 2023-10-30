@@ -1,0 +1,44 @@
+studentId: speaker01
+project: speaker01-green
+clusterAppsDomain: apps.cluster-w97m7.w97m7.sandbox753.opentlc.com/
+
+image:
+  masterfile: 
+    repo: quay.io/kbai/m-caj-masterfile
+    tag: v0.1.0
+  fare: 
+    repo: quay.io/ske/m-caj-fare
+    tag: latest
+  payment: 
+    repo: quay.io/ske/m-caj-payment
+    tag: latest
+  schedule:
+    repo: quay.io/ske/m-caj-schedule
+    tag: latest
+  reservation:
+    repo: quay.io/ske/m-caj-reservation
+    tag: latest
+  mockTVM:
+    repo: quay.io/ske/m-caj-mock-tvm
+    tag: latest
+  mockSecureTVM:
+    repo: quay.io/ske/m-caj-mock-tvm
+    tag: tls
+  monoBackend:
+    repo: quay.io/ske/m-caj-mono-backend
+    tag: latest
+
+# Service Config
+masterfileURL: http://m-caj-masterfile:8080
+fareURL: http://m-caj-fare:8080
+paymentURL: http://m-caj-payment:8080
+membershipURL: http://m-caj-payment:8080
+
+# DB Config
+db:
+  dialect: org.hibernate.dialect.H2Dialect
+  driver: org.h2.Driver
+  url: 'jdbc:h2:mem:lab;DB_CLOSE_DELAY=-1'
+  user: sa
+  pxd: c2E=
+
